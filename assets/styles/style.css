@@ -1,0 +1,232 @@
+footer {
+    position: unset;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+p {
+    padding: 0px 5px;
+}
+
+ul,
+p,
+body,
+.headerImg {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* информационный блок */
+.aboutMe,
+.aboutCourse {
+    width: 100%;
+}
+
+.fio {
+    text-align: center;
+    width: 100%;
+    height: 70px;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.infoBlock {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.photo {
+    padding-top: 5%;
+    width: 250px;
+    height: 375px;
+}
+
+.photoImg {
+    background-image: url("../picture/photo.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-style: solid;
+    border-width: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.whiteThime {
+    border-color: white;
+    background-color: white;
+}
+
+.blackThime {
+    border-color: gray;
+    background-color: gray;
+}
+
+/* блок с картинками */
+.blockImage1,
+.blockImage2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 450px);
+}
+
+.container1 {
+    grid-template-rows: repeat(1, 400px 30px);
+}
+
+.container2 {
+    grid-template-rows: repeat(2, 400px 30px);
+}
+
+.container1,
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 1px;
+}
+
+.headerPhoto {
+    font-weight: bold;
+    font-size: 18pt;
+    padding: 10px;
+    text-align: center;
+}
+
+.imageBlock {
+    width: 100%;
+}
+
+.image1 {
+    background-image: url("../picture/image1.jpg");
+}
+
+.image2 {
+    background-image: url("../picture/image2.jpg");
+}
+
+.image3 {
+    background-image: url("../picture/image3.jpg");
+}
+
+.image4 {
+    background-image: url("../picture/image4.jpg");
+}
+
+.image5 {
+    background-image: url("../picture/image5.jpg");
+}
+
+.image6 {
+    background-image: url("../picture/image6.jpg");
+}
+
+.image7 {
+    background-image: url("../picture/image7.jpg");
+}
+
+.image8 {
+    background-image: url("../picture/image8.jpg");
+}
+
+.image1,
+.image2,
+.image3,
+.image4,
+.image5,
+.image6,
+.image7,
+.image8 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: solid;
+    border-width: 10px;
+    border-bottom: none;
+    background-size: cover;
+    background-position: center;
+}
+
+.signature1 {
+    border-style: solid;
+    border-width: 10px;
+    border-top: none;
+    text-align: center;
+}
+
+
+/* изменение размеров экна формы */
+@media screen and (min-width: 800px) {
+    .blockImage1 {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 350px);
+    }
+
+    .blockImage2 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 650px);
+    }
+
+    .container1 {
+        grid-template-rows: repeat(1, 300px 30px);
+    }
+
+    .container2 {
+        grid-template-rows: repeat(1, 600px 30px);
+    }
+
+    .photo {
+        padding: 5% 0 0 5%;
+        width: 400px;
+        height: 600px;
+    }
+
+    .info {
+        flex: 1;
+    }
+
+    .aboutMe,
+    .aboutCourse {
+        width: 50%;
+    }
+
+    .photoImg {
+        width: 80%;
+        height: 80%;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+    .blockImage1 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 400px);
+    }
+
+    .blockImage2 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 550px);
+    }
+
+    .container1 {
+        grid-template-rows: repeat(1, 350px 30px);
+    }
+
+    .container2 {
+        grid-template-rows: repeat(1, 500px 30px);
+    }
+
+    .aboutMe,
+    .aboutCourse {
+        width: 50%;
+    }
+
+    .photo {
+        width: 400px;
+        height: 600px;
+    }
+}

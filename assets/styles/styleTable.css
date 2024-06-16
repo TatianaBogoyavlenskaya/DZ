@@ -1,0 +1,188 @@
+td a,
+.elementFlex a,
+.elementGrid a,
+td a:hover,
+td a:visited {
+    color: black;
+    text-decoration: none;
+    padding: 0px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+.colorRed {
+    background-color: #e2909e;
+}
+
+.colorYellow {
+    background-color: #f3e13a;
+}
+
+.colorBlue {
+    background-color: #95d2de;
+}
+
+table,
+td,
+.elementFlex a,
+.elementGrid a {
+    border-style: solid;
+    border-width: 1px;
+    border-collapse: collapse;
+}
+
+.whiteThime {
+    border-color: black;
+}
+
+.blackThime {
+    border-color: wheat;
+}
+
+td {
+    width: 90px;
+}
+
+/* ячейка обтеканием */
+.designation {
+    font-size: 18pt;
+    font-weight: bold;
+    text-align: left;
+    float: left;
+    width: 40%;
+    height: 30px;
+}
+
+.name {
+    font-size: 12pt;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+.number {
+    font-size: 12pt;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    float: left;
+    width: 60%;
+}
+
+.weight {
+    font-size: 10pt;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    float: left;
+    width: 60%;
+}
+
+/* другие места надписей в зависимости от цвета */
+.colorBlue a .designation {
+    font-size: 18pt;
+    font-weight: bold;
+    text-align: right;
+    float: right;
+    width: 40%;
+    height: 30px;
+}
+
+.colorBlue a .number {
+    font-size: 12pt;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    float: right;
+    width: 60%;
+}
+
+.colorBlue a .weight {
+    font-size: 10pt;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    float: right;
+    width: 60%;
+}
+
+.colorBlue a .name {
+    font-size: 12pt;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+}
+
+/* ячейка на flex */
+.elementFlex {
+    display: flex;
+    width: 90px;
+    flex-wrap: wrap;
+}
+
+.elementFlex a {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.elementFlex a .designation {
+    float: none;
+    height: 40%;
+    width: 40%;
+}
+
+.elementFlex a .number {
+    float: none;
+    width: 60%;
+    height: 40%;
+}
+
+.elementFlex a .weight {
+    float: none;
+    width: 100%;
+    height: 30%;
+}
+
+.elementFlex a .name {
+    width: 100%;
+    height: 30%;
+}
+
+/* ячейка на grid */
+.elementGrid {
+    width: 90px;
+    height: 60px;
+}
+
+.elementGrid a {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.elementGrid a .designation {
+    float: none;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.elementGrid a .number {
+    float: none;
+    text-align: right;
+    width: 100%;
+}
+
+.elementGrid a .weight {
+    float: none;
+    text-align: right;
+    width: 100%;
+}
+
+.elementGrid a .name {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
